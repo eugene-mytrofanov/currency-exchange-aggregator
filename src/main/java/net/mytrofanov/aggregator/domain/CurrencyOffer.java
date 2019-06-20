@@ -1,12 +1,13 @@
 package net.mytrofanov.aggregator.domain;
 
-public class CurrencyOffer {
+public class CurrencyOffer extends ID {
 
     private Currency currencyType;
     private Double buy;
     private Double sale;
 
-    public CurrencyOffer(Currency currencyType, Double buy, Double sale) {
+    public CurrencyOffer(Long id, Currency currencyType, Double buy, Double sale) {
+        super(id);
         this.currencyType = currencyType;
         this.buy = buy;
         this.sale = sale;
